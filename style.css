@@ -1,0 +1,115 @@
+*{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: linear-gradient( #A348EC , #44BCC5);
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#Mainbox{
+   position: relative;
+   width: 750px;
+   background-color: #fff;
+   border-radius: 25px;
+   padding: 30Px;
+
+}
+#Mainbox h2{
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#Mainbox textarea{
+    position: relative;
+    width: 80% !important;
+    height: 200px;
+    resize: none;
+    border-radius: 18px;
+    border: solid rgba(0,0,0,0.3);
+    outline: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: #555;
+}
+
+#Mainbox p{
+    position:absolute;
+    right: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column ;
+    font-size: 2rem;
+    color: #555;
+}
+
+#Mainbox p span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: #44BCC5;
+    color: #fff;
+    border-radius: 50%;
+}
+
+#Mainbox p span.blink{
+    box-shadow: 0px 0px 6px #44BCC5,
+                0px 0px 12px #44BCC5,
+                0px 0px 18px #44BCC5,
+                0px 0px 24px #44BCC5;
+}
+
+footer{
+    position: absolute;
+    text-align: center;
+    top: 95%;
+    transition: all .5s;
+}
+
+@media (max-width:770px){
+    #Mainbox{
+        width:580px;
+    }
+    #Mainbox p{
+        font-size: 1.5rem;
+        right: 26px;
+    }
+}
+
+@media (max-width:600px){
+    #Mainbox{
+        width:300px;
+    }
+    #Mainbox h2{
+        font-size: 1.5rem;
+        line-height: 120%;
+        
+    }
+    #Mainbox textarea{
+       width: 100% !important;
+    }
+    #Mainbox p{
+        position: relative;
+        top:0;
+        right: 0;
+        transform: translateY(0);
+        margin-bottom: 10px;
+        margin-top: 5px;
+
+    }
+}
